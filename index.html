@@ -20,7 +20,8 @@
 
 </head>
 <body>
-
+	
+	<!-- Header Wrap -->
 	<header class="container-fluid">
 		<div class="d-flex justify-content-between">
 			<div class="brand">
@@ -34,14 +35,55 @@
 				</ul>
 			</nav>
 			<div class="header-contact-cta">
-				<a href="#!">
+				<a href="javascript:void(0)" class="" id="openContactUS">
 					Contact Us
 					<img class="arrow" src="img/elements/arrow_light.svg" alt="Contact Us">
 				</a>
 			</div>
 		</div>
 	</header>
-
+	<!-- Header Wrap -->
+	
+	<!-- Contact Us PopUp Wrap -->
+	<div id="contactPopUp" class="overlay">
+		<a href="javascript:void(0)" class="close-popup" id="closeContactUS">
+			<img class="arrow" src="img/elements/arrow_light.svg" alt="Close">
+		</a>
+			<div class="container-fluid">
+				<div class="row">
+				  	<div class="col-sm no-display-on-mobile left">	
+						<img src="img/logos/logo_light.svg" alt="Millio And Up">
+				  	</div>
+				  	<div class="col-sm right">
+						<div class="info-content">
+							<h4>Customer Service</h4>
+							<ul class="list-inline">
+								<a href="#!"><li>Skype: Millionandup</li></a>
+								<a href="#!"><li>Email: Contact Us</li></a>
+							</ul>
+							<h4>Buying or Selling a Property?</h4>
+							<ul class="list-inline">
+								<a href="#!"><li>+1 (305) 407-1415</li></a>
+							</ul>
+							<hr>
+							<div class="social-popup">
+								<a href="#!"><i class="fa fa-facebook"></i></a>
+								<a href="#!"><i class="fa fa-twitter"></i></a>
+								<a href="#!"><i class="fa fa-google-plus"></i></a>
+								<a href="#!"><i class="fa fa-youtube-play"></i></a>
+								<a href="#!"><i class="fa fa-pinterest-p"></i></a>
+								<a href="#!"><i class="fa fa-instagram"></i></a>
+								<a href="#!"><i class="fa fa-houzz"></i></a>
+							</div>
+						</div>
+						
+				  	</div>
+				</div>
+			</div>
+	</div>
+	<!-- Contact Us PopUp Wrap  -->
+	
+	<!-- Home Banner Wrap -->
 	<section class="home-banner">
 		<div class="row justify-content-center">
 			<div class="col-lg-9 home-search-component">
@@ -73,7 +115,7 @@
 								</select>
 							</div>
 							<div class="form-group col-md-3">
-								<label for="price">Bedrooms</label>
+								<label for="bedrooms">Bedrooms</label>
 								<select class="form-select" aria-label="Default select example">
 									<option selected>1 Bedrooms +</option>
 									<option value="1">2 Bedrooms +</option>
@@ -82,7 +124,7 @@
 								</select>
 							</div>
 							<div class="form-group col-md-3">
-								<label for="price">Bathrooms</label>
+								<label for="bathrooms">Bathrooms</label>
 								<select class="form-select" aria-label="Default select example">
 									<option selected>1 Bathrooms +</option>
 									<option value="1">2 Bathrooms +</option>
@@ -105,7 +147,9 @@
 			</div>
 		</div>
 	</section>
+	<!-- Home Banner Wrap -->
 
+	<!-- Home Listings Wrap -->
 	<section class="home-listings">
 		<div class="row justify-content-center">
 			
@@ -208,16 +252,17 @@
 	         <!--End carousel-->
 			
 		</div>
-
 	</section>
+	<!-- Home Listings Wrap -->
 
+	<!-- CTA Bottom Wrap -->	
 	<section class="cta-bottom">
 		<div class="container">
 		  	<div class="row">
 		    	<div class="col-sm">
 		    		<a href="#!">
 			    		<div class="menu-item-cta-bottom">
-			    			<h3>Search Luxury Homes</h3>
+			    			<h3>Search <span class="bold-text">Luxury Homes</span></h3>
 			    			<img class="arrow" src="img/elements/arrow_light.svg" alt="Search Luxury Homes">
 			    		</div>
 			    	</a>
@@ -225,7 +270,7 @@
 		    	<div class="col-sm">
 		    		<a href="#!">
 			    		<div class="menu-item-cta-bottom">
-			    			<h3>Glance Mansions</h3>
+			    			<h3>Glance <span class="bold-text">Mansions</span></h3>
 			    			<img class="arrow" src="img/elements/arrow_light.svg" alt="Glance Mansions">
 			    		</div>
 			    	</a>
@@ -233,7 +278,7 @@
 		    	<div class="col-sm">
 		    		<a href="#!">
 			    		<div class="menu-item-cta-bottom">
-			    			<h3>Need A Realtor?</h3>
+			    			<h3>Need <span class="bold-text">A Realtor?</span></h3>
 			    			<img class="arrow" src="img/elements/arrow_light.svg" alt="Need A Realtor?">
 			    		</div>
 			    	</a>
@@ -241,10 +286,10 @@
 		    </div>
 		</div>
 	</section>
+	<!-- CTA Bottom Wrap -->	
 
 
-
-
+	<!-- Footer Wrap -->
 	<footer class="container-fluid">
 		<div class="container main-footer">
 		  <div class="row">
@@ -284,7 +329,9 @@
 		  </div>
 		</div>
 	</footer>
+	<!-- Footer Wrap -->
 
+	<!-- Disclaimer Wrap -->
 	<div class="container footer-disclaimer">
 		<div class="row justify-content-center">
 			<div class="col-9">
@@ -294,12 +341,26 @@
 			</div>
 		</div>
 	</div>
+	<!-- Disclaimer Wrap -->
 
-
+	<!-- SCRIPTS -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	<!-- PopUp Menu -->
+	<script>
+		$('#openContactUS').on('click', function() {
+			$("#contactPopUp").show();
+			$('body').css('overflow','hidden')
+		});
+
+		$('#closeContactUS').on('click', function() {
+			$("#contactPopUp").hide();
+			$('body').css('overflow','auto')
+		});
+	</script>
 
   </body>
 </html>

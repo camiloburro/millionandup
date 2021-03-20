@@ -47,7 +47,6 @@ header{
 	} 
 	.header-contact-cta{
 		margin-right: 1rem;
-		// font-weight: 700;
 		font-size: 0.9rem;
 		.arrow{
 			position: relative;
@@ -62,6 +61,8 @@ header{
 	}
 
 } 
+//Contact PopUp
+@import "_contact-pop-up";
 
 //Section Home banner ::::::::::::::
 .home-banner{

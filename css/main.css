@@ -9980,6 +9980,104 @@ header .header-contact-cta:hover .arrow {
   left: 0px;
 }
 
+.overlay {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background-image: url("../img/banners/pop-up-banner.jpg");
+  background-size: cover;
+  background-position: center center;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay .close-popup {
+  position: absolute;
+  z-index: 10;
+  top: 20px;
+  right: 25px;
+  width: 100px;
+  height: auto;
+  transform: rotate(180deg);
+}
+.overlay .left {
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.overlay .left img {
+  bottom: 3rem;
+  left: 3rem;
+  position: absolute;
+  max-width: 300px;
+}
+.overlay .right {
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.overlay .right .info-content {
+  color: white;
+  padding: 5rem;
+}
+.overlay .right .info-content h4 {
+  font-size: 1rem;
+  margin-top: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.overlay .right .info-content a {
+  color: white;
+  transition: all 0.5s ease;
+}
+.overlay .right .info-content a:hover {
+  color: #cfcfcf;
+}
+.overlay .right .info-content ul li {
+  font-size: 0.8rem;
+  padding: 1rem 2rem 0;
+}
+.overlay .right .info-content hr {
+  margin: 3rem 0;
+  background-color: white;
+  opacity: 0.3;
+}
+.overlay .right .info-content .social-popup {
+  margin: 1.2rem 0;
+}
+.overlay .right .info-content .social-popup a {
+  color: white;
+}
+.overlay .right .info-content .social-popup a:hover {
+  color: #cfcfcf;
+}
+.overlay .right .info-content .social-popup i {
+  margin: 0px 2px 0px 16px;
+  font-size: 1rem;
+}
+@media (max-width: 767.98px) {
+  .overlay .close-popup {
+    top: 15px;
+    right: 12px;
+  }
+  .overlay .right .info-content {
+    padding: 5rem 1rem 0;
+  }
+  .overlay .right .info-content h4 {
+    margin-top: 2rem;
+  }
+  .overlay .right .info-content ul li {
+    font-size: 0.8rem;
+    padding: 0.7rem 1rem 0;
+  }
+  .overlay .right .info-content hr {
+    margin: 1.5rem 0;
+  }
+}
+
 .home-banner {
   padding: 2rem;
   background-image: url("../img/banners/home-banner-florida-1.jpg");
