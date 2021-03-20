@@ -1,0 +1,225 @@
+//Theming
+$dark: black;
+
+// Required
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+//Global ::::::::::::::
+html, body{
+	font-family: 'Montserrat', sans-serif;
+	line-height:1.4rem;
+	a:hover{
+		color:$dark;
+		text-decoration:none;
+	}
+	.bold-text{
+		font-weight: 700;
+	}
+}
+
+//Header ::::::::::::::
+header{
+	margin-bottom:-80px;
+	padding-top:30px;
+	a{
+		color:white;
+		transition: all 0.5s ease;
+		&:hover{
+			color:white;
+			opacity: 0.8;
+		}
+	}
+	.brand{
+		width:200px;
+	}
+	.header-main-navigation ul{
+		margin-top: 7px;
+		.list-inline-item:not(:last-child) {
+    		margin-right: 1.5rem;
+		}
+		li{
+			font-size:0.8rem;
+		}
+	} 
+	.header-contact-cta{
+		margin-right: 1rem;
+		// font-weight: 700;
+		font-size: 0.9rem;
+		.arrow{
+			position: relative;
+    		max-width: 70px;
+    		left: 15px;
+    		top: -5px;
+    		transition: all 0.5s ease;
+		}
+		&:hover .arrow{
+    		left: 0px;
+		}
+	}
+
+} 
+
+//Section Home banner ::::::::::::::
+.home-banner{
+	padding:2rem;
+	background-image: url('../img/banners/home-banner-florida-1.jpg');
+	background-size:cover;
+	background-position:center center;
+	@include media-breakpoint-down(sm) {
+		background-position: 30% bottom;
+	}
+}
+@import "_search-component.scss";
+
+
+//Section home-listings - Carousel ::::::::::::::
+.home-listings{
+	padding:3rem 2rem;
+	background-size:cover;
+	background-position:center center;
+	.section-title{
+		padding:5rem 1rem 4rem;
+		text-align:center;
+		text-transform:uppercase;
+	}
+	@include media-breakpoint-down(sm) {
+		.section-title{
+			padding: 2rem 1rem 2rem;
+		}
+	}
+}
+//Carousel
+@import "_carousel.scss";
+
+
+//Section cta-bottom ::::::::::::::
+.cta-bottom{
+	margin-top: 6rem;
+	padding:2rem 2rem 2rem 2rem;
+	height:400px;
+	background-image: url('../img/banners/home-banner-florida-2.jpg');
+	background-size:cover;
+	background-position:center center;
+	.menu-item-cta-bottom{
+		margin-top: -45px;
+		padding: 47px 20px 25px 20px;
+    	background-color: $dark;
+    	color: white;
+    	transition: all 0.5s ease;
+    	h3{
+    		font-size: 1rem;
+    	}
+    	.arrow{
+			position: relative;
+    		max-width: 80px;
+    		left: 15px;
+    		transition: all 0.5s ease;
+		}
+		&:hover{ 
+			padding: 57px 20px 25px 20px;
+			.arrow{
+    			left: 0px;
+			}
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		background-position: 70% center;
+		margin-top: 2rem;
+		.container{
+			margin-top: -65px;
+		}
+		.menu-item-cta-bottom {
+    		margin: 15px 6px;
+    		padding: 13px 20px 2px 20px;
+    		h3{
+    			font-size: 0.8rem;
+    		}
+    		.arrow{
+    			max-width: 70px;
+    			left: 15px;
+    			top:-7px;
+			}
+    		&:hover{ 
+				padding: 13px 20px 2px 20px;
+			}
+    	}
+	}
+}
+
+
+//Footer ::::::::::::::
+footer{
+	background-color:$dark;
+	font-size:0.8rem;
+
+	.footer-brand{
+		margin-bottom: 4rem;
+		img{
+			max-width: 200px;
+		}
+	}
+
+	.main-footer{
+		color:white;
+		padding:4rem 1rem;	
+		.footer-info{
+			text-align:right;
+			.language-select{
+			 	.btn{
+					color: white;
+    				font-size: 0.7rem;
+    				padding: 0;
+    			}
+    			.dropdown-item{
+    				font-size: 0.7rem;
+    			}
+			}
+			.footer-social{
+				margin:1.2rem 0;
+				a{ 
+					color:white;
+				}
+				i{
+					margin: 0px 2px 0px 16px;
+    				font-size: 1rem;
+				}
+			}
+			.contact-info{
+				font-size:0.6rem;
+			}
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		.footer-brand{
+			text-align: center;
+		}
+		.footer-info{
+			text-align:center !important;
+		}
+	}
+	
+}
+//Disclaimer
+.footer-disclaimer{
+	padding:4rem 1rem 3rem;
+	p{
+		font-size: 0.6rem;
+    	text-align: center;
+	}
+}
+
+//Media Queries
+@include media-breakpoint-down(sm) {
+  .header-main-navigation, .no-display-on-mobile {
+    display: none !important;
+  }
+}
+
+
+
+
+

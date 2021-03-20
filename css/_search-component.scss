@@ -1,0 +1,76 @@
+.home-search-component{
+	margin: 300px 0px -43px 0px;
+	background-color:white;
+	padding:3rem 2rem 1.5rem 2rem;
+
+	form{
+		padding: 0px 30px;
+	}
+	.search-form-select{
+		margin: -32px 0px 20px -10px;
+		.btn{
+			font-size: 0.8rem;
+		}
+		.dropdown-item{
+    		font-size: 0.7rem;
+    	}
+	}
+	.search-component-for-sale{
+		label{
+			display: block;
+		}
+		select{
+			width: 95%;
+		    border: none;
+		    border-bottom: 1px solid $dark;
+		    font-size: 0.7rem;
+		    padding: 1rem 0.5rem;
+		}
+		button{
+			padding: 1.1rem 1rem 1rem 1rem;
+    		background: transparent;
+    		border: none;
+    		text-transform: uppercase;
+    		letter-spacing: 3px;
+    		font-weight:700;
+    		font-size: 0.9rem;
+    		.arrow{
+				position: relative;
+    			max-width: 70px;
+    			left: 15px;
+    			transition: all 0.5s ease;
+			}
+    		&:hover .arrow{
+    			left: 0px;
+			}
+		}
+	}
+	@include media-breakpoint-down(sm) {
+	    margin: 130px 0px -43px -38%;
+    	padding: 2rem 0rem 0rem 0rem;
+    	width: 74%;
+    	.search-form-select {
+    		text-align: right;
+    		margin: -29px 0px 8px 17px;
+		}
+		.search-component-for-sale{
+			select{
+				padding: 0.5rem 0em;
+			}
+			button{
+				padding: 0rem 1rem;
+	    		.arrow{
+					position: relative;
+	    			max-width: 70px;
+	    			left: 15px;
+	    			transition: all 0.5s ease;
+				}
+	    		&:hover .arrow{
+	    			left: 0px;
+				}
+			}
+		}
+	}
+}
+
+

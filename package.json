@@ -1,0 +1,23 @@
+{
+  "name": "onemillionup",
+  "version": "1.0.0",
+  "description": "Homepage Markup",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camiloburro/onemillionup.git"
+  },
+  "author": "Camilo Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camiloburro/onemillionup/issues"
+  },
+  "homepage": "https://github.com/camiloburro/onemillionup#readme"
+}
